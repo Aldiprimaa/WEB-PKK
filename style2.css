@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang lebih cerah */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px; /* Ukuran font yang lebih besar */
+}
+
+main {
+    padding: 20px;
+}
+
+.deskripsi {
+    text-align: justify;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Warna latar belakang putih */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih menonjol */
+}
+
+.jenis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.jenis h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.border {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih menonjol */
+}
+
+.border img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+.border h3 {
+    margin: 0;
+    color: #555;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center; /* Pusatkan gambar di bagian atas */
+    margin-bottom: 20px;
+}
+
+.gif-container .border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border img {
+    margin: 10px;
+}
+
+.jenis {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jenis .border {
+    margin: 10px;
+    flex: 1 1 200px;
+}
+
+.jenis img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .border {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .border {
+        flex: 1 1 100%;
+    }
+}
